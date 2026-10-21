@@ -2,6 +2,10 @@ import unittest
 from Calc import Calculator  # The class we are going to implement
 
 class TestCalculator(unittest.TestCase):
+    def test_power_positive_integers(self):
+        calc = Calculator()
+        self.assertEqual(calc.power(2, 3), 8)
+
     def test_modulo_positive_integers(self):
         calc = Calculator()
         self.assertEqual(calc.modulo(7, 3), 1)
