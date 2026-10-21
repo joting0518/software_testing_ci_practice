@@ -7,7 +7,7 @@ class Calculator:
         return a % b
 
     def add(self, a, b):
-        return round(a - b, 10) # fix
+        return round(a + b, 10)
     
     def subtract(self, a, b):
         result = a - b
