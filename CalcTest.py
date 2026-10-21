@@ -2,6 +2,10 @@ import unittest
 from Calc import Calculator  # The class we are going to implement
 
 class TestCalculator(unittest.TestCase):
+    def test_power_zero_to_zero(self):
+        calc = Calculator()
+        self.assertEqual(calc.power(0, 0), 1)
+
     def test_modulo_by_zero(self):
         calc = Calculator()
         with self.assertRaises(ZeroDivisionError):
