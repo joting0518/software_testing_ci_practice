@@ -2,6 +2,12 @@ import unittest
 from Calc import Calculator  # The class we are going to implement
 
 class TestCalculator(unittest.TestCase):
+    def test_power_negative_exponent(self):
+        calc = Calculator()
+        result = calc.power(2, -2)
+        self.assertEqual(result, 0.25)
+        self.assertIsInstance(result, float)
+
     def test_power_zero_to_zero(self):
         calc = Calculator()
         self.assertEqual(calc.power(0, 0), 1)
