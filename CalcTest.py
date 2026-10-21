@@ -2,6 +2,10 @@ import unittest
 from Calc import Calculator  # The class we are going to implement
 
 class TestCalculator(unittest.TestCase):
+    def test_modulo_negative_dividend(self):
+        calc = Calculator()
+        self.assertEqual(calc.modulo(-7, 3), 2)
+
     def test_power_negative_exponent(self):
         calc = Calculator()
         result = calc.power(2, -2)
