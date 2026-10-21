@@ -1,5 +1,8 @@
 import math
 class Calculator:
+    def modulo(self, a, b):
+        return a % b
+
     def add(self, a, b):
         return round(a + b, 10) # fix
     
